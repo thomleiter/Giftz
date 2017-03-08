@@ -13,6 +13,8 @@
 		2C0CAB771E6E85F1007A11A9 /* Giftz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CAB751E6E85F1007A11A9 /* Giftz.xcdatamodeld */; };
 		2C0CAB791E6E85F1007A11A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CAB781E6E85F1007A11A9 /* Assets.xcassets */; };
 		2C0CAB7C1E6E85F1007A11A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CAB7A1E6E85F1007A11A9 /* LaunchScreen.storyboard */; };
+		2C0CAB841E6F955D007A11A9 /* best.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CAB831E6F955D007A11A9 /* best.jpg */; };
+		2C0CAB861E6F9B12007A11A9 /* GiftzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CAB851E6F9B12007A11A9 /* GiftzViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2C0CAB781E6E85F1007A11A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C0CAB7B1E6E85F1007A11A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C0CAB7D1E6E85F1007A11A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C0CAB831E6F955D007A11A9 /* best.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = best.jpg; sourceTree = "<group>"; };
+		2C0CAB851E6F9B12007A11A9 /* GiftzViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftzViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		2C0CAB6D1E6E85F1007A11A9 /* Giftz */ = {
 			isa = PBXGroup;
 			children = (
+				2C0CAB831E6F955D007A11A9 /* best.jpg */,
 				2C0CAB6E1E6E85F1007A11A9 /* AppDelegate.swift */,
 				2C0CAB701E6E85F1007A11A9 /* ViewController.swift */,
+				2C0CAB851E6F9B12007A11A9 /* GiftzViewController.swift */,
 				2C0CAB721E6E85F1007A11A9 /* Main.storyboard */,
 				2C0CAB781E6E85F1007A11A9 /* Assets.xcassets */,
 				2C0CAB7A1E6E85F1007A11A9 /* LaunchScreen.storyboard */,
@@ -127,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C0CAB7C1E6E85F1007A11A9 /* LaunchScreen.storyboard in Resources */,
+				2C0CAB841E6F955D007A11A9 /* best.jpg in Resources */,
 				2C0CAB791E6E85F1007A11A9 /* Assets.xcassets in Resources */,
 				2C0CAB741E6E85F1007A11A9 /* Main.storyboard in Resources */,
 			);
@@ -142,6 +149,7 @@
 				2C0CAB771E6E85F1007A11A9 /* Giftz.xcdatamodeld in Sources */,
 				2C0CAB711E6E85F1007A11A9 /* ViewController.swift in Sources */,
 				2C0CAB6F1E6E85F1007A11A9 /* AppDelegate.swift in Sources */,
+				2C0CAB861E6F9B12007A11A9 /* GiftzViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
