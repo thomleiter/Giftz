@@ -53,5 +53,7 @@ class GiftzViewController: UIViewController, UIImagePickerControllerDelegate, UI
         gift.image = UIImagePNGRepresentation(giftzImageView.image!) as NSData?
         
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+        navigationController!.popViewController(animated: true)
     }
 }
