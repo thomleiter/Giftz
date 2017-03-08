@@ -39,7 +39,7 @@
                     <navigationItem key="navigationItem" id="jRG-Hr-4j9">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="8AG-NY-J3C">
                             <connections>
-                                <segue destination="2Fc-Eb-2iN" kind="show" id="nrp-JF-edg"/>
+                                <segue destination="2Fc-Eb-2iN" kind="show" identifier="giftSegue" id="nrp-JF-edg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -96,6 +96,15 @@
                                     <action selector="addButtonTapped:" destination="2Fc-Eb-2iN" eventType="touchUpInside" id="iU3-nm-3O8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fc4-RE-Ppv">
+                                <rect key="frame" x="275" y="390" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="ADD"/>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="2Fc-Eb-2iN" eventType="touchUpInside" id="Yez-oM-5zW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -139,6 +148,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addUpdateButton" destination="d3F-Uz-yNb" id="j5S-eS-Syg"/>
                         <outlet property="giftzImageView" destination="eEn-gf-07w" id="WKq-dd-mxN"/>
                         <outlet property="locationTextField" destination="E4L-3N-SEZ" id="UXh-xh-5RG"/>
                         <outlet property="priceTextField" destination="obh-mv-GAN" id="7rw-Ec-0Ie"/>

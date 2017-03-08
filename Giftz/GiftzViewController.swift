@@ -10,20 +10,26 @@ import UIKit
 
 class GiftzViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var addUpdateButton: UIButton!
     @IBOutlet weak var giftzImageView: UIImageView!
-    
     @IBOutlet weak var titleTextField: UITextField!
-    
     @IBOutlet weak var locationTextField: UITextField!
-    
     @IBOutlet weak var priceTextField: UITextField!
     
     var imagePicker = UIImagePickerController()
+    var gift : Gift? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         imagePicker.delegate = self
+        
+        if gift != nil {
+            giftzImageView.image = UIImage(data: gift!.image as! Data)
+            titleTextField.text = gift!.title
+            
+            addUpdateButton.setTitle("Update", for: .normal)
+        }
         
     }
     
